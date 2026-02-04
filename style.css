@@ -1,0 +1,54 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+body.home {
+  height: 100vh;
+  background: linear-gradient(135deg, #d4af37, #000000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Center content */
+.container {
+  text-align: center;
+}
+
+/* Name styling */
+.name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #ffd700, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 2px solid gold;
+  color: gold;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: gold;
+  color: black;
+}
