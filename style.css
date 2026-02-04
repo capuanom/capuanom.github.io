@@ -9,11 +9,11 @@
 /* ------------------ Home Page ------------------ */
 body.home {
   height: 100vh;
-  background: linear-gradient(135deg, #d4af37, #000000);
+  background-color: #e6f2e6; /* light green background */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #1b3a2d; /* dark green text for contrast */
 }
 
 .container {
@@ -24,9 +24,7 @@ body.home {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 40px;
-  background: linear-gradient(to right, #ffd700, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #1b3a2d; /* dark green text */
 }
 
 .buttons {
@@ -38,22 +36,22 @@ body.home {
 .btn {
   text-decoration: none;
   padding: 15px 30px;
-  border: 2px solid gold;
-  color: gold;
+  border: 2px solid #2e8b57; /* green border */
+  color: #2e8b57;            /* green text */
   font-size: 1.1rem;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: gold;
-  color: black;
+  background-color: #2e8b57;
+  color: white;
 }
 
-/* ------------------ About Me Page ------------------ */
+/* ------------------ About Me & Projects Page ------------------ */
 body {
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #f0f7f0; /* light greenish background */
+  color: #1b3a2d;            /* dark green text */
 }
 
 .page {
@@ -68,7 +66,7 @@ body {
 .page h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #222;
+  color: #1b3a2d; /* dark green */
   text-align: center;
 }
 
@@ -80,13 +78,13 @@ body {
 
 /* Highlight strong text for projects/companies */
 .page strong {
-  color: #d4af37;
+  color: #2e8b57; /* green highlights */
 }
 
 /* Horizontal separator for sections */
 .page hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #c3e0c3; /* soft green line */
   margin: 40px 0;
 }
 
@@ -95,15 +93,77 @@ body {
   display: inline-block;
   margin-top: 30px;
   text-decoration: none;
-  color: #d4af37;
+  color: #2e8b57;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 .page a:hover {
-  color: #b58f0b;
+  color: #1b3a2d;
 }
 
+/* ------------------ Project Cards ------------------ */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin-bottom: 40px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Back Button Styling */
+.back-button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: 2px solid #2e8b57;
+  color: #2e8b57;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #2e8b57;
+  color: white;
+}
 
 /* ------------------ Responsive Design ------------------ */
 @media (max-width: 600px) {
@@ -125,15 +185,4 @@ body {
     flex-direction: column;
     gap: 15px;
   }
-}
-
-/* Project card images */
-.project-image {
-  width: 100%;           /* make image take full width of card */
-  height: auto;          /* maintain aspect ratio */
-  max-width: 100%;       /* prevent overflow */
-  display: block;
-  margin: 15px 0;        /* spacing above and below */
-  border-radius: 8px;    /* rounded corners to match card */
-  object-fit: cover;     /* ensures image fills container nicely */
 }
