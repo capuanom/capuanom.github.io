@@ -127,4 +127,13 @@ body {
   }
 }
 
-
+/* Project card images */
+.project-image {
+  width: 100%;           /* make image take full width of card */
+  height: auto;          /* maintain aspect ratio */
+  max-width: 100%;       /* prevent overflow */
+  display: block;
+  margin: 15px 0;        /* spacing above and below */
+  border-radius: 8px;    /* rounded corners to match card */
+  object-fit: cover;     /* ensures image fills container nicely */
+}
