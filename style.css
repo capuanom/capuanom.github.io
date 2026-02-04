@@ -145,8 +145,8 @@ body {
 
 /* Back Button Styling */
 .back-button-container {
-  text-align: center;
-  margin-top: 40px;
+  text-align: left;
+  margin-top: 30px; 
 }
 
 .back-btn {
