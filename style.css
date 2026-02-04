@@ -104,13 +104,6 @@ body {
   color: #b58f0b;
 }
 
-/* Optional: subtle paragraph hover effect */
-.page p:hover {
-  background-color: #fff8e1;
-  transition: background-color 0.3s;
-  padding: 5px 10px;
-  border-radius: 6px;
-}
 
 /* ------------------ Responsive Design ------------------ */
 @media (max-width: 600px) {
